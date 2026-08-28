@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cinema.LoginController">
+   <children>
+      <VBox alignment="CENTER" fillWidth="false" maxHeight="334.0" maxWidth="300.0" prefHeight="334.0" prefWidth="300.0" spacing="30.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="162.0">
+               <children>
+                  <ImageView fitHeight="68.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label text="Label" />
+               </children>
+            </HBox>
+            <TextField />
+            <HBox prefHeight="52.0" prefWidth="187.0">
+               <children>
+                  <PasswordField />
+                  <Button mnemonicParsing="false" text="Button" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#login" text="Entrar" />
+            <Label text="Não tem uma conta?" />
+            <Button mnemonicParsing="false" onAction="#cadastrarPagina" text="Resgiste-se aqui!" />
+         </children>
+      </VBox>
+   </children>
+</StackPane>
