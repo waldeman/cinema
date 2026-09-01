@@ -1,14 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.cinema.MainController"
-            prefHeight="400.0" prefWidth="600.0">
 
-</AnchorPane>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="802.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cinema.MainController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="790.0" prefWidth="602.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="307.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="602.0" />
+                  <ImageView fitHeight="300.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagens/WhatsApp%20Image%202026-08-28%20at%2010.32.51.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <ScrollPane fitToWidth="true" prefHeight="396.0" prefWidth="612.0">
+               <content>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="619.0" prefWidth="622.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </StackPane>
+                              <Button mnemonicParsing="false" onAction="#abrirAcentos" text="Button">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </StackPane>
+                              <Button mnemonicParsing="false" onAction="#abrirAcentos" text="Button">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </StackPane>
+                              <Button mnemonicParsing="false" onAction="#abrirAcentos" text="Button">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </StackPane>
+                              <Button mnemonicParsing="false" onAction="#abrirAcentos" text="Button">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </StackPane>
+                              <Button mnemonicParsing="false" onAction="#abrirAcentos" text="Button">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </StackPane>
+                              <Button mnemonicParsing="false" onAction="#abrirAcentos" text="Button">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </StackPane>
+                              <Button mnemonicParsing="false" onAction="#abrirAcentos" text="Button">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </StackPane>
+                              <Button mnemonicParsing="false" onAction="#abrirAcentos" text="Button">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </StackPane>
+                              <Button mnemonicParsing="false" onAction="#abrirAcentos" text="Button">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </StackPane>
+                              <Button mnemonicParsing="false" onAction="#abrirAcentos" text="Button">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
