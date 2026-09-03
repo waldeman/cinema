@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="802.0" prefWidth="757.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cinema.MainController">
+   <children>
+      <VBox fx:id="fundo" alignment="CENTER" prefHeight="790.0" prefWidth="602.0" style="-fx-background-color: white;">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="307.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="602.0" />
+                  <ImageView fitHeight="300.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagens/WhatsApp%20Image%202026-08-28%20at%2010.32.51.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <ScrollPane fitToWidth="true" prefHeight="396.0" prefWidth="612.0">
+               <content>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="619.0" prefWidth="622.0" style="-fx-background-color: white;">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="138.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Imagens/autodacompadecida.jpeg" />
+                                       </image></ImageView>
+                                 </children>
+                              </StackPane>
+                              <Button fx:id="b1" mnemonicParsing="false" onAction="#abrirAcentos" styleClass="filme" text="O Alto da Compadecida">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="138.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Imagens/homemaranha.jpeg" />
+                                       </image></ImageView>
+                                 </children>
+                              </StackPane>
+                              <Button fx:id="b2" mnemonicParsing="false" onAction="#abrirAcentos" styleClass="filme" text="Homem Aranha 3">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Imagens/tropadeelite.jpeg" />
+                                       </image></ImageView>
+                                 </children>
+                              </StackPane>
+                              <Button fx:id="b3" mnemonicParsing="false" onAction="#abrirAcentos" styleClass="filme" text="Tropa de Elite">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Imagens/velozes.jpeg" />
+                                       </image></ImageView>
+                                 </children>
+                              </StackPane>
+                              <Button fx:id="b4" mnemonicParsing="false" onAction="#abrirAcentos" styleClass="filme" text="Velozes &amp; Furiosos">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Imagens/todomundo.jpeg" />
+                                       </image></ImageView>
+                                 </children>
+                              </StackPane>
+                              <Button fx:id="b5" mnemonicParsing="false" onAction="#abrirAcentos" styleClass="filme" text="Todo Mundo em Pânico">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Imagens/gentegrande.jpeg" />
+                                       </image></ImageView>
+                                 </children>
+                              </StackPane>
+                              <Button fx:id="b6" mnemonicParsing="false" onAction="#abrirAcentos" styleClass="filme" text="Gente Grande">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Imagens/homemlibelula.jpeg" />
+                                       </image></ImageView>
+                                 </children>
+                              </StackPane>
+                              <Button fx:id="b7" mnemonicParsing="false" onAction="#abrirAcentos" styleClass="filme" text="Homem Libélula">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Imagens/branquelas.jpeg" />
+                                       </image></ImageView>
+                                 </children>
+                              </StackPane>
+                              <Button fx:id="b8" mnemonicParsing="false" onAction="#abrirAcentos" styleClass="filme" text="As Branquelas">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Imagens/matrix.jpeg" />
+                                       </image></ImageView>
+                                 </children>
+                              </StackPane>
+                              <Button fx:id="b9" mnemonicParsing="false" onAction="#abrirAcentos" styleClass="filme" text="Matrix">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0" spacing="15.0">
+                           <children>
+                              <StackPane prefHeight="160.0" prefWidth="270.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Imagens/WhatsApp%20Image%202026-09-02%20at%2013.15.34.jpeg" />
+                                       </image></ImageView>
+                                 </children>
+                              </StackPane>
+                              <Button fx:id="b10" mnemonicParsing="false" onAction="#abrirAcentos" styleClass="filme" text="Invocação do Mal">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,68 @@
+.root{
+    -fx-background-color: #dddddd;
+}
+#fundo{
+    -fx-background-color: white;
+    -fx-border-radius: 25px;
+    -fx-background-radius:25px ;
+
+}
+.text-field{
+    -fx-background-color:#d8d7d7;
+    -fx-border-width: 2px;
+    -fx-border-radius:25px;
+    -fx-background-radius:25px ;
+    -fx-border-fill:black;
+
+
+}
+.password-field{
+    -fx-background-color: #d8d7d7;
+    -fx-border-width: 2px;
+    -fx-border-radius:25px;
+    -fx-background-radius:25px ;
+    -fx-border-fill:black;
+}
+.button{
+    -fx-background-color: #d8d7d7;
+    -fx-border-width: 2px;
+    -fx-border-radius:25px;
+    -fx-background-radius:25px ;
+    -fx-border-fill:black;
+}
+.button:hover{
+    -fx-background-color: #a8a3a3
+}
+#link{
+    -fx-text-fill: #3f75b8;
+    -fx-background-color: white;
+    -fx-underline:true;
+}
+#link:hover{
+    -fx-text-fill: #0f4997;
+}
+.disponivel {
+    -fx-fill: gray;
+    -fx-stroke: black;
+    -fx-stroke-width: 2;
+}
+
+.disponivel:hover {
+    -fx-fill: #6ee66e;
+    -fx-cursor: hand;
+}
+.selecionada{
+    -fx-fill: blue;
+}
+
+.ocupada {
+    -fx-fill: red;
+}
+.filme{
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+.filme:hover{
+    -fx-text-fill: #003f8f;
+    -fx-background-color: #d1d0d0
+}
