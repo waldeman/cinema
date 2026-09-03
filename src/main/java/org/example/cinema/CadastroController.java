@@ -41,6 +41,7 @@ public class CadastroController {
             Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) evento.getSource()).getScene().getWindow();
+            scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
             stage.setScene(scene);
             stage.setFullScreen(false);
             stage.setFullScreen(true);

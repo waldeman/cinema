@@ -8,7 +8,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -18,9 +17,6 @@ import java.io.IOException;
 import java.util.List;
 
 public class LoginController {
-    private Parent root;
-    private Stage stage;
-    private Scene scene;
     @FXML
     private TextField campoUserLogin;
     @FXML private PasswordField campoSenhaLogin;
@@ -34,6 +30,7 @@ public class LoginController {
                 Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) ((Node) evento.getSource()).getScene().getWindow();
+                scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
                 stage.setScene(scene);
                 stage.setFullScreen(false);
                 stage.setFullScreen(true);

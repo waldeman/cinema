@@ -12,48 +12,18 @@ import org.example.cinema.utilitarios.processamento.Matriz;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AcentosController {
+public class AssentosController {
     @FXML
     private GridPane cadeiras;
     List<String> cadeirasSelecionadas;
+    private String caminho;
     @FXML
     public void initialize() {
         cadeiras.getColumnConstraints().clear();
         cadeiras.getRowConstraints().clear();
         cadeiras.setAlignment(Pos.CENTER);
         cadeirasSelecionadas = new ArrayList<>();
-        List<String> cadeirasOcupadas = Arquivos.obterCadeiras("dados/filmes/assentos.txt");
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                String nome = letra(i) + (j + 1);
-                Circle circle = new Circle(15);
-                circle.setId(nome);
-                if (Matriz.verificarCadeira(cadeirasOcupadas, circle.getId())) {
-                    circle.getStyleClass().add("disponivel");
-                } else {
-                    circle.getStyleClass().add("ocupada");
-                }
 
-                circle.setOnMouseClicked(event -> {
-                    if (circle.getStyleClass().contains("ocupada")) {
-                        circle.setMouseTransparent(true);
-                    }
-
-                    if (circle.getStyleClass().contains("disponivel")) {
-
-                        circle.getStyleClass().remove("disponivel");
-                        circle.getStyleClass().add("selecionada");
-                        cadeirasSelecionadas.add(nome);
-
-                    } else {
-                        circle.getStyleClass().remove("selecionada");
-                        circle.getStyleClass().add("disponivel");
-                        cadeirasSelecionadas.remove(nome);
-                    }
-                });
-                cadeiras.add(circle, i, j);
-            }
-        }
 
     }
     @FXML
@@ -63,7 +33,7 @@ public class AcentosController {
 
             for (String cadeira : cadeirasSelecionadas) {
 
-                Arquivos.registrarCadeira(cadeira, "dados/assentos.txt");
+                Arquivos.registrarCadeira(cadeira, caminho);
                 for (var node : cadeiras.getChildren()) {
                     if (node instanceof Circle circle &&
                             circle.getId().equals(cadeira)) {
@@ -95,6 +65,45 @@ public class AcentosController {
                 return "H";
             default:
                 return "Flamengo";
+        }
+    }
+    public void setCaminho(String caminho) {
+        this.caminho = caminho;
+        preencherCadeiras();
+    }
+    public void preencherCadeiras(){
+        List<String> cadeirasOcupadas = Arquivos.obterCadeiras(caminho);
+
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                String nome = letra(i) + (j + 1);
+                Circle circle = new Circle(15);
+                circle.setId(nome);
+                if (Matriz.verificarCadeira(cadeirasOcupadas, circle.getId())) {
+                    circle.getStyleClass().add("disponivel");
+                } else {
+                    circle.getStyleClass().add("ocupada");
+                }
+
+                circle.setOnMouseClicked(event -> {
+                    if (circle.getStyleClass().contains("ocupada")) {
+                        circle.setMouseTransparent(true);
+                    }
+
+                    if (circle.getStyleClass().contains("disponivel")) {
+
+                        circle.getStyleClass().remove("disponivel");
+                        circle.getStyleClass().add("selecionada");
+                        cadeirasSelecionadas.add(nome);
+
+                    } else {
+                        circle.getStyleClass().remove("selecionada");
+                        circle.getStyleClass().add("disponivel");
+                        cadeirasSelecionadas.remove(nome);
+                    }
+                });
+                cadeiras.add(circle, i, j);
+            }
         }
     }
 }

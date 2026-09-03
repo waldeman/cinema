@@ -94,4 +94,7 @@ public class Arquivos {
         }
         return temMaiuscula && temMinuscula;
     }
+    public static String nomeFilme(String filme){
+        return filme.replace(" ", "");
+    }
 }

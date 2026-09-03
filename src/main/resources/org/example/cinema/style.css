@@ -58,3 +58,11 @@
 .ocupada {
     -fx-fill: red;
 }
+.filme{
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+.filme:hover{
+    -fx-text-fill: #003f8f;
+    -fx-background-color: #d1d0d0
+}
